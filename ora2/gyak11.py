@@ -6,3 +6,8 @@ oda_vissza = csak_oda * 2
 print("Oda-vissza:", oda_vissza, "l")
 ar = oda_vissza * 460
 print("A teljes üzemanyag költség: ", ar)
+teljesar = ar + 70000
+if 90000 >= teljesar:
+    print("El tudok menni.")
+else:
+    print("Nem tudok elmenni.")
