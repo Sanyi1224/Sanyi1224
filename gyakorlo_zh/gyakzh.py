@@ -27,6 +27,18 @@ print(valami(x,y))
 #    print(sor[0])
 
 #int-ker int-szavazat str-vezetéknév str-utónév str-partrov
+from kepviselo import Kepviselo
+
+def osztaly(lista:list) -> list:
+    lista2 = []
+    for sor in lista:
+        k = Kepviselo(sor[0],sor[1],sor[2],sor[3],sor[4])
+        lista2.append(k)
+    return  lista2
+
+#lista = [k, k, k, k, k]  ahol k egy osztály attribútum
+
+
 def beolvas()->list:
     try:
         lista = []
@@ -145,6 +157,12 @@ def hetedik(lista: list):
     f.close()
 
 hetedik(lista)
+
+lista2 = osztaly(lista)
+#print(lista2)
+
+for sor in lista2:
+    print(sor.nev1,sor.nev2)
 
 
 
